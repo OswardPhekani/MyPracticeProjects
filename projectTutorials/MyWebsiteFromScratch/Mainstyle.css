@@ -71,6 +71,7 @@ body{
     height: 250px;
     border: solid black;
     border-radius: 10px;
+    text-align: left;
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -88,4 +89,12 @@ body{
     /* display: flex;
     align-items: center; */
     
+}
+
+/* Addiing a thumnail hover animation  */
+.thumbnail {
+    transition: transform 0.3s;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
 }
