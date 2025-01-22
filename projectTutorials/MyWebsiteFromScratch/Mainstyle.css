@@ -54,10 +54,11 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* border-radius: 0 0 0 4px; */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     /* align-items: center; */
     align-content: center;
+    /* flex-grow: 1; */
     
 
    
@@ -72,6 +73,9 @@ body{
     border: solid black;
     border-radius: 10px;
     text-align: left;
+    flex:1 0 200px;
+
+
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;
