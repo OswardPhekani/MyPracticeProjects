@@ -58,6 +58,7 @@ body{
     flex-wrap: wrap;
     /* align-items:grid center; */
     align-content: center;
+    overflow-wrap: normal;
     /* flex-grow: 1; */
     
 
@@ -75,6 +76,7 @@ body{
     border-radius: 10px;
     text-align: left;
     flex:1 0 200px;
+    overflow-wrap:anywhere;
 
 
     /* display: flex;
@@ -91,6 +93,8 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     height: 100px;
+    object-fit: cover;
+    overflow: hidden;
     /* display: flex;
     align-items: center; */
     
