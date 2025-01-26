@@ -1,0 +1,95 @@
+html, body {
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Main Grid Container Main Layout  */
+.main-grid-container{
+    display: grid;
+    padding-left: 12px;
+    border-radius: 15px;
+    grid-template-areas: 
+    "sidebar-container mainview-container mainview-container "
+    "sidebar-container project-container project-container"
+    "sidebar-container about-container  about-container"
+    "sidebar-container contact-container contact-container"
+    "sidebar-container experience-container experience-container "
+    "sidebar-container qualifications-container qualifications-container"
+    "footer-container "
+    ;
+    grid-template: repeat(8, 1fr) / repeat(3, 1fr) ;
+}
+
+/* Layout Containers Start Here  */
+
+/* .sidebar-menu-container START here  */
+.sidebar-menu-container{
+    grid-area: sidebar-container;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: aqua;
+}
+
+/* .sidebar-menu-container ENDS here  */
+
+
+/* .mainview-header-container START here */
+
+.mainview-header-container{
+    grid-area: mainview-container;
+    background-color: rgb(159, 171, 26);
+}
+
+/* .mainview-header-container END here  */
+
+/* .main-project-container STARTS  Here  */
+.main-project-container{
+    grid-area: project-container;
+    background-color: rgb(20, 129, 17);
+
+}
+/* .main-project-container ENDS Here  */
+
+
+/* .about-container STARTS  here  */
+.about-container{
+    grid-area: about-container;
+    background-color: rgb(182, 30, 30);
+}
+
+/* .about-container ENDS here  */
+
+
+/* .contact-me-container STARTS here  */
+.contact-me-container{
+    grid-area: contact-container;
+    background-color: rgb(25, 19, 101);
+}
+/* .contact-me-container ENDS here  */
+
+
+/* .experience-container STARTS Here  */
+.experience-container{
+    grid-area: experience-container;
+    background-color: rgb(148, 24, 157);
+}
+
+/* .experience-container ENDS Here   */
+
+/* .qualifications-container STARTS Here  */
+.qualifications-container{
+    grid-area: qualifications-container;
+    background-color: rgb(92, 12, 138);
+
+}
+
+/* .qualifications-container ENDS Here  */
+
+
+/* footer-container STARTS Here  */
+.footer-container{
+    grid-area: footer-container;
+    background-color: rgb(1, 12, 12);
+}
+/* footer-container ENDS Here  */
+
