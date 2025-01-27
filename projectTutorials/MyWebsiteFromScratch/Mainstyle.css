@@ -1,33 +1,46 @@
 html, body {
-    background-color: rgb(217, 217, 217);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* background-color: rgb(217, 217, 217); */
+    background: linear-gradient(to right,rgb(29, 25, 57), rgb(88, 76, 167));
+
+    font-family: 'Trebuchet MS';
+    color: white;
+    /* display: grid; */
   }
 /* Main Grid Container Main Layout  */
 .main-grid-container{
+    /* background-color: blue; */
     display: grid;
-    padding-left: 12px;
-    border-radius: 15px;
+    grid-gap: 5px;
     grid-template-areas: 
     "sidebar-container mainview-container mainview-container "
-    "sidebar-container project-container project-container"
-    "sidebar-container about-container  about-container"
+    "sidebar-container project-container project-container "
+    "sidebar-container about-container  about-container "
     "sidebar-container contact-container contact-container"
     "sidebar-container experience-container experience-container "
     "sidebar-container qualifications-container qualifications-container"
-    "footer-container "
+    "footer-container footer-container footer-container"
     ;
-    grid-template: repeat(8, 1fr) / repeat(3, 1fr) ;
+    /* grid-template: 20px 50px;  */
 }
+.item {
+    background-color: #96BCEF;
+    /* text-align: center; */
+    padding: 20px;
+    border-radius: 5px;
+   }
 
 /* Layout Containers Start Here  */
 
 /* .sidebar-menu-container START here  */
 .sidebar-menu-container{
     grid-area: sidebar-container;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: aqua;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* grid-column:span 1; */
+    /* max-width: 150px; */
 }
 
 /* .sidebar-menu-container ENDS here  */
@@ -37,7 +50,10 @@ html, body {
 
 .mainview-header-container{
     grid-area: mainview-container;
-    background-color: rgb(159, 171, 26);
+    /* background-color: rgb(159, 171, 26); */
+    display: flex;
+    flex-direction: row;
+    /* grid-row: span 2; */
 }
 
 /* .mainview-header-container END here  */
@@ -45,8 +61,41 @@ html, body {
 /* .main-project-container STARTS  Here  */
 .main-project-container{
     grid-area: project-container;
-    background-color: rgb(20, 129, 17);
+    /* background-color: rgb(20, 129, 17); */
+    /* grid-column: span 3; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project-header{
+    text-align: center;
+    display: flex;
+}
+.project-item{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: inset blue;
+    padding: 12px;
+    margin: 10px;
+    /* width: 300px;  */
+    height: 250px;
+    border: solid black;
+    border-radius: 10px;
+    text-align: left;
+    flex:1 0 200px;
+    overflow-wrap:anywhere;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.project-item img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    /* display: flex;
+    align-items: center; */
+    
 }
 /* .main-project-container ENDS Here  */
 
@@ -54,7 +103,9 @@ html, body {
 /* .about-container STARTS  here  */
 .about-container{
     grid-area: about-container;
-    background-color: rgb(182, 30, 30);
+    /* background-color: rgb(182, 30, 30); */
+    flex-direction: row;
+    /* grid-row: span 3; */
 }
 
 /* .about-container ENDS here  */
@@ -63,7 +114,9 @@ html, body {
 /* .contact-me-container STARTS here  */
 .contact-me-container{
     grid-area: contact-container;
-    background-color: rgb(25, 19, 101);
+    /* background-color: rgb(25, 19, 101); */
+    flex-direction: row;
+    /* grid-column: span 3; */ 
 }
 /* .contact-me-container ENDS here  */
 
@@ -71,7 +124,8 @@ html, body {
 /* .experience-container STARTS Here  */
 .experience-container{
     grid-area: experience-container;
-    background-color: rgb(148, 24, 157);
+    /* background-color: rgb(148, 24, 157); */
+    /* grid-row: span 2;  */
 }
 
 /* .experience-container ENDS Here   */
@@ -79,7 +133,8 @@ html, body {
 /* .qualifications-container STARTS Here  */
 .qualifications-container{
     grid-area: qualifications-container;
-    background-color: rgb(92, 12, 138);
+    /* background-color: rgb(92, 12, 138); */
+    /* grid-row: span 3; */
 
 }
 
@@ -89,7 +144,55 @@ html, body {
 /* footer-container STARTS Here  */
 .footer-container{
     grid-area: footer-container;
-    background-color: rgb(1, 12, 12);
+    /* background-color: rgb(1, 12, 12); */
+    grid-row: span 4;
+    text-align: center;
+
 }
+
 /* footer-container ENDS Here  */
 
+
+/* Template sample */
+/* 
+.container {
+     display: grid;
+     grid-gap: 5px;
+     grid-template-areas:
+      "sidebar header header header"
+      "sidebar main main main"
+      "sidebar photo photo button"
+      "footer footer footer footer";
+   
+    }
+
+.header {
+    grid-area: header;
+   }
+   
+   .sidebar {
+    grid-area: sidebar;
+    max-width: 40px;
+   }
+   
+   .main {
+    grid-area: main;
+   }
+   
+   .footer {
+    grid-area: footer;
+   }
+   
+   .photo {
+    grid-area: photo;
+   }
+   
+   #buy-button {
+    grid-area: button;
+    color: white;
+    background-color: #708090;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 1px;
+   } */
