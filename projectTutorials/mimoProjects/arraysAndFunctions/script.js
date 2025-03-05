@@ -54,3 +54,4 @@ function applyNewDiscount(ourPrices, ourDiscounts){
 }
 /* Call the function */
 applyNewDiscount(ourPrices, ourDiscounts);
+
