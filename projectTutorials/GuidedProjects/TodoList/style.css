@@ -1,0 +1,20 @@
+*{
+    /* Universal CSS  */
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153777, #4e085f);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 549px;
+    background: #fff;
+    margin: 100px auto 20px;
+}
