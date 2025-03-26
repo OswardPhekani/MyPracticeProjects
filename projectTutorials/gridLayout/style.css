@@ -25,21 +25,36 @@ html {
   .container {
     color: white;
     font-family: helvetica, arial, sans-serif;
+    display: grid;
+    /* Setting up the number of grid columns we need  */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    
   }
   
   header {
     background: skyblue;
+    /* Setting up the end values for the grid ending with 13  */
+    grid-column: 1/13;
   }
   main {
     background: slategray;
+   grid-column: 4/10;
   }
   nav {
     background: cadetblue;
+   grid-column: 1/4;
   }
   aside {
     background: seagreen;
+    /* Assign Column Span  */
+    grid-column: 10/13;
+  }
+  /* assign Grid row to cover up spaces  */
+  main, nav, aside {
+    grid-row: 2/4;
   }
   footer {
     background: darkslateblue;
+    grid-column: 1/13;
   }
   
