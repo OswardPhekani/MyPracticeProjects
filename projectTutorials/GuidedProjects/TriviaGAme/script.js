@@ -21,9 +21,9 @@ function displayQuestion() {
       btn.value = choicesArray[currentQuestionsIndex][i];
     }
   } else {
-    for (let i = 1; i <= 4; i++) {
-      document.getElementById(`choice${i}`).disabled = true;
-    }
+    // for (let i = 1; i <= 4; i++) {
+    //   document.getElementById(`choice${i}`).disabled = true;
+    // }
   }
 }
 
