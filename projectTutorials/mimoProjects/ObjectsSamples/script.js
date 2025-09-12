@@ -47,6 +47,9 @@ console.log(ghotsToJSON);
 // Change the format to a JS object, make the amendment, and then convert it back to JSON. 
 
 const flower = '{"name": "Rose", "color": "blue", "price": 2.5, "season": "spring"}';
+
+console.log("Current Flower JSON FILE ");
+console.log(flower);
 //1st convert the JSON to Objects 
 const flowerObject = JSON.parse(flower);
 
@@ -56,3 +59,9 @@ flowerObject.color = "Red";
 // print the current updated object
 console.log("UPdated Flower Object ");
 console.log(flowerObject);
+
+// Convert the flowerObject back to a JSON File
+
+const flowerObjectToJSON = JSON.stringify(flowerObject);
+console.log("UPdated JSON FILE ");
+console.log(flowerObjectToJSON);
