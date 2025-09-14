@@ -34,7 +34,7 @@ function applyDiscount(prices, discounts){
     }
 }
 /* Call the function and pass the parameters */
-// applyDiscount(prices, discounts);
+ applyDiscount(prices, discounts);
 
 // applying Multiple discounts 
 
