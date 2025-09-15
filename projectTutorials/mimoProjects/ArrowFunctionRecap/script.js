@@ -25,3 +25,17 @@ console.log(getGreetings());
 
 const greeting = (firstName)=> "hi" + firstName;
 console.log(greeting(' Tony'));
+
+// Adding default Values to the parameteres in an Arrow FUCTION 
+const getPrice = (total = 200 , discount = 3) => total - (discount * total);
+
+console.log(getPrice());
+
+// using a stored Variable to add to the function parameter
+const getTotal =  (total)=>{
+    const dicount = 0.25;
+    return total - (dicount * total);
+}
+const finalTotal = getTotal(500);
+console.log(finalTotal);
+// console.log( getTotal(500));
