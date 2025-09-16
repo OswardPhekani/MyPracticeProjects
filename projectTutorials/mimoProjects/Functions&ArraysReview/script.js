@@ -55,6 +55,12 @@ function numberOfTaskAvailable(){
 numberOfTaskAvailable();
 
 function taskCompleted(){
+    // const bannas = 20;
+    // const oranges = 10; 
+
+    // const fruitbaskeHas = `YOO HAVE: ${bannas + oranges} In YOUR BASKET`;
+    // console.log(fruitbaskeHas);
+    
         if(taskOnTodoList.length > 1){
             console.log(" No time To rest You have " + taskOnTodoList.length + " Tasks To Do"); 
         }else{

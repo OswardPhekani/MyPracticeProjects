@@ -1,4 +1,5 @@
 //Create a JSON DATA STRUCTURE OF CHARACTERS
+/*
 const data = {
 "characters": [{
       "name": "Rick Sanchez",
@@ -21,7 +22,8 @@ const data = {
     }
 ]
 };
-console.log(data);
+**/
+// console.log(data);
 
 //refference the HTML Tag character-container in javascript 
 //use forEach function to access the data in the JSON FILE
@@ -34,8 +36,14 @@ console.log(data);
 //reference HTML
 const characterContainer =document.getElementById("characters-container");
 
+// Call the DATA DYNAMICALY USING JSON API 
+
+// USING THE FERTCH FUNCTION
+
+fetch("https://rickandmortyapi.com/api/character").then(
+  (Response) => Response.json()).then( (data) => {
 //Access data
-data.characters.forEach(character => {
+data.result.forEach((character) => {
 // Create Card DIV
 const card = document.createElement("div");
 card.className = "card";
@@ -59,4 +67,11 @@ card.innerHTML =
                      </p> 
 `;
 });
+   });
 
+
+
+// Calling data from an API / JSON  SERVER
+// fetch("https://rickandmortyapi.com/api/character")
+//   .then((Response) => Response.json())
+//   .then((data) => {}); 
