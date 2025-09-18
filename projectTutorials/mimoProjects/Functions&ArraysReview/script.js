@@ -1,5 +1,7 @@
 // REVIEW EXERCISE 
 
+// const { createElement } = require("react");
+
 // Create a program that adds  a task to an array of a TODO LIST 
 
 // use factions to see if there are still task in to be done or if the list is empty 
@@ -48,9 +50,22 @@ function removeTaskFunction(taskRemove){
 // removeTask = removeTaskFunction();
 
 function numberOfTaskAvailable(){
-    for (let i = 0; i < taskOnTodoList.length; i++){
-        console.log ("Your Task : " + taskOnTodoList[i]); 
+    // for (let i = 0; i < taskOnTodoList.length; i++){
+    //     console.log ("Your Task : " + taskOnTodoList[i]); 
+    //     const printTodoList = document.getElementById("myToDoList");
+    //     let newList = document.createElement("li");
+    //     newList.innerHTML = taskOnTodoList[i];
+    //     printTodoList.children(newList);
+    // }
+     const printTodoList = document.getElementById("myToDoList");
+  if (printTodoList) {
+    printTodoList.innerHTML = ""; // clear previous list
+    for (let i = 0; i < taskOnTodoList.length; i++) {
+      let newList = document.createElement("li");
+      newList.textContent = taskOnTodoList[i];
+      printTodoList.appendChild(newList);
     }
+}
 }
 numberOfTaskAvailable();
 
