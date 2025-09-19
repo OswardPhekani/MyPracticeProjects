@@ -25,9 +25,9 @@ el[1].addEventListener("click", changeHeight);
 el[2].addEventListener("click", changeWidth);
 
 
-const itemDiv = document.querySelector("div");
+// const itemDiv = document.querySelector("div");
 
-function changeColor() {
- itemDiv.classList.toggle("pink");
-}
-itemDiv.addEventListener("click", changeColor);
+// function changeColor() {
+//  itemDiv.classList.toggle("pink");
+// }
+// itemDiv.addEventListener("click", changeColor);
