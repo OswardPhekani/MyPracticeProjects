@@ -1,0 +1,15 @@
+.default {
+ text-align: center;
+ background-color: skyBlue;
+ height: 100px;
+ width: 50%;
+ margin: 20px;
+}
+
+.width {
+ width: 80%;
+}
+
+.height {
+ height: 200px;
+}
