@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To DO LIST</title>
+    <title>To do list application</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <h1>TO DO LIST </h1>
+    <div class="lines">
+        <ul id="todos-container">
+
+        </ul>
+    </div>
+    <p> Add items on the list, you can click on an item to check it off</p>
+    <div id="container">
+        <!-- Input Section -->
+        <input type="text" id="node" placeholder="Type Something">
+        <!-- Buttons  -->
+         <button type="button" onclick="createTodos()">Add Task</button>
+         <button type="button" onclick="deleteTodos()"> Delete All</button>
+    </div>
+
+     <script src="./script.js"></script>
 </body>
 </html>
