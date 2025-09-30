@@ -13,3 +13,47 @@
 .height {
  height: 200px;
 }
+
+/* Change the DIV tag Color   */
+.item {
+ background-color: greenyellow;
+ color: black;
+ height: 100px;
+ width: 100px;
+ padding: 25px;
+ margin: 25px;
+}
+
+.height {
+ height: 200px;
+}
+
+/* Change color DIV tag to blue when clicked  */
+.item-blue{
+ background-color: forestgreen;
+ color: white;
+ height: 100px;
+ width: 100px;
+ padding: 25px;
+ margin: 25px;
+}
+
+.blue {
+ background-color: dodgerblue;
+}
+
+
+/* Make Text Area change Blue when Scrolled style is in CSS FIle */
+
+item-red {
+ background-color: rebeccapurple;
+ color: white;
+ height: 100px;
+ width: 100px;
+ padding: 25px;
+ margin: 25px;
+}
+
+.red {
+ background-color: darkred;
+}
