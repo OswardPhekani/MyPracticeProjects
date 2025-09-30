@@ -21,3 +21,17 @@ function updateValue() {
 input.
 onchange
  = updateValue;
+
+input.
+oninput
+ = updateValue;
+
+
+//  Button Quary Selector 
+const greeting = document.querySelector("#greeting");
+const button = document.querySelector("button");
+
+function hello() {
+ greeting.innerText = "Welcome!";
+}
+button.onclick = hello;
