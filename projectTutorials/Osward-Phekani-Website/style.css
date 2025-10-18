@@ -1,7 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --ff: "Montserrat", sans-serif;
+    --colorprimary: #ffffff;
+    --colorprimaryshadow:#424E60;
+    --colorsecondary:#000000;
+    --coloraccent:#4D3DFF;
+    --h1: bold 48px/60px var(--ff);
+    --h2: 36px/20px var(--ff);
+    --h3: 18px/12px var(--ff);
+    --p: 12px/30px var(--ff);
+}
+h1 {
+    font: var(--h1);
+}
+h2 {
+    font: var(--h2);
+}
+h3 {
+    font: var(--h3);
+}
+p {
+    font: var(--p);
+}
+body {
+    width: 90%;
+    max-width: 1280px;
+    margin:20px auto;
+    background: var(--colorsecondary);
+    color: var(--colorprimary);
+    font: var(--p);
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+a {
+background: var(--coloraccent);
+color: var(--colorprimary);
+padding: 20px 40px;
+text-decoration: none;
+font-weight: bold;
+font: var(--p);
+margin: 5px;
+
+}
+.sidebar-links{
+background: var(--coloraccent);
+color: var(--colorprimary);
+padding: 20px 40px;
+text-decoration: none;
+font-weight: bold;
+font: var(--p);
+margin: 5px;
+}
 /* Responsive Website  */
 header{
+    background-color: rgb(35, 35, 35);
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.container{
+background-color: rgb(35, 35, 35);
+display: flex;
+gap: 40px;
+position: relative;
+border-radius: 10px;
+align-items: center;
+flex-wrap: wrap;
+/* margin: 20px; */
+padding: 20px;
+}
+div{
+    flex: 1;
+    min-width: min(350px, 90vw);
+    flex-wrap: wrap;
+}
+.main-layout{
+ /* background-color: antiquewhite; */
+ flex-grow: 1;
+ gap: 40px;
+ position: relative;
+ border-radius: 15px;
+ align-items: center;
+
+}
+
+.hamburger{
+    display: flex;
 }
 .header-middle{
 flex-grow: 1;
@@ -9,23 +98,21 @@ max-width: 25%;
 }
 
 
-.container{
-background-color: aqua;
-display: flex;
-gap: 4rem;
-position: relative;
-}
-.main-layout{
- background-color: antiquewhite;
- flex-grow: 1;
-}
 .show-sidebar{
-    background-color: beige;
+    /* background-color: beige;
+     */
+    }
+    .sidebar-links{
+        
 }
  aside{
+    background: var(--colorprimaryshadow);
     position: sticky;
-    top:80px;
+    top:10px;
+    display: flex;
+    flex-direction: column;
     align-self: flex-start;
+    border-radius: 10px;
 }
 
 * {
@@ -38,44 +125,65 @@ position: relative;
  
 
 /* Main sections */
-
-
 .main-hero{
-    background-color: blue;
+    /* background-color: blue;
+     */
+    background:var(--colorprimaryshadow);
     display: flex;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    flex-grow: 4;
     flex-direction: row;
-    
-    gap: 5rem;
-    
-}
-.main-aboutme{
-    background-color: rgb(72, 72, 183);
-    display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+.main-aboutme{
+    background:var(--colorprimaryshadow);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+     border-radius: 10px;
     
 }
 .main-projects{
-    background-color: brown;
+    /* background-color: brown; */
+    background:var(--colorprimaryshadow);
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 .main-experiences{
-    background-color: rgb(255, 255, 255);
+    background-color: #353535;
+    color: var(--colorprimary);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: start;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 footer{
-    background-color: rgb(55, 1, 233);
+    background: var(--colorprimaryshadow);
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+     border-radius: 10px;
+     margin-top: 20px;
 }
 img{
-    width: 200px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -87,16 +195,15 @@ img{
         flex-grow: 0;
         margin-left: auto;
         margin-right: 1.5tem;
-    }
-    /* aside{
+    } 
+     aside{
     position: absolute;
     top: 0px;
     left: -2.5%;
     background-color: rgb(66, 64, 64);
     padding: 0 5% 0 2.5%;
-    height: 100vh; */
+    height: 100vh;
 
 }
-
 
 }

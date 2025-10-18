@@ -4,5 +4,5 @@ const sidebar = document.querySelector("aside");
 
 hambugger.addEventListener("click",()=>{
     sidebar.classList.toggle("show-sidebar");
-    sidebar.classList.toggle("hide-sidebar");
+    sidebar.classList.toggle("sidebar-links");
 })
