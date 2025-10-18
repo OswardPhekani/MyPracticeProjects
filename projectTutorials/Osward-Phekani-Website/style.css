@@ -1,0 +1,102 @@
+/* Responsive Website  */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-middle{
+flex-grow: 1;
+max-width: 25%;
+}
+
+
+.container{
+background-color: aqua;
+display: flex;
+gap: 4rem;
+position: relative;
+}
+.main-layout{
+ background-color: antiquewhite;
+ flex-grow: 1;
+}
+.show-sidebar{
+    background-color: beige;
+}
+ aside{
+    position: sticky;
+    top:80px;
+    align-self: flex-start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adding Color Variables to create a web theme  */
+ 
+
+/* Main sections */
+
+
+.main-hero{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-grow: 4;
+    flex-direction: row;
+    
+    gap: 5rem;
+    
+}
+.main-aboutme{
+    background-color: rgb(72, 72, 183);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main-projects{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-experiences{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+}
+footer{
+    background-color: rgb(55, 1, 233);
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 200px;
+}
+
+
+
+/* Change size and appearance according to size of screen  */
+@media (max-width: 50rem) {
+
+    .header-middle{
+        flex-grow: 0;
+        margin-left: auto;
+        margin-right: 1.5tem;
+    }
+    /* aside{
+    position: absolute;
+    top: 0px;
+    left: -2.5%;
+    background-color: rgb(66, 64, 64);
+    padding: 0 5% 0 2.5%;
+    height: 100vh; */
+
+}
+
+
+}
