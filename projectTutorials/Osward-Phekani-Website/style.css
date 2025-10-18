@@ -161,6 +161,10 @@ max-width: 25%;
     margin-top: 20px;
     border-radius: 10px;
 }
+.main-projects-card{
+    min-width: min(200px, 90vw);
+    flex-wrap: wrap;
+}
 .main-experiences{
     background-color: #353535;
     color: var(--colorprimary);
