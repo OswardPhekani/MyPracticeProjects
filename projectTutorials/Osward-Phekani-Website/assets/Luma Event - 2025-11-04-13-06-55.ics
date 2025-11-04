@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20251113T000000Z
+DTEND:20251113T010000Z
+DTSTAMP:20251104T130655Z
+ORGANIZER;CN="Mimo Live Sessions":MAILTO:calendar-invite@lu.ma
+UID:evt-Qi9QmLnNfUMqtn9@events.lu.ma
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=oswar
+ ddesigns@gmail.com;X-NUM-GUESTS=0:mailto:oswarddesigns@gmail.com
+SUMMARY:JavaScript Classes Intro - US
+DESCRIPTION:Get up-to-date information at: https://luma.com/4grdsiiu\n\nJa
+ vaScript Classes Intro\nIn this session, we'll explore JavaScript classes
+ .\nThat's what we have on the agenda:\nTransforming a simple object into a
+  class\nCreating constructors for our classes\nAdding a subclass\nInitiati
+ ng objects from our classes\nPrerequisites\nWe welcome you to the session 
+ no matter what experience you have.\nTo get the most out of this workshop,
+  we recommend you have a basic understanding of the following topics:\nJ
+ avaScript fundamentals (functions, data structures, etc.)\nThis is your c
+ hance to learn new skills from an experienced teacher.\nYou'll also have t
+ he opportunity to…\n\nHosted by Mimo & Pam
+LOCATION:https://luma.com/event/evt-Qi9QmLnNfUMqtn9
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
